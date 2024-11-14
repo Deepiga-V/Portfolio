@@ -918,6 +918,7 @@ footer .social a:hover {
         }
         .home-content p{
             margin: 1rem -5rem;
+            font-weight: 400;
         }
         .home-content h3{
             font-size: 2.3rem;
@@ -932,6 +933,11 @@ footer .social a:hover {
             flex-direction: column-reverse;
             margin-top: -40rem;
             margin-bottom: -30rem;
+        }
+        .about-content h2{
+            font-size: 65px;
+            margin-bottom: 3rem;
+
         }
         .about-circle{
             height: 52vw;
@@ -975,12 +981,15 @@ footer .social a:hover {
         }    
         
         .project-box{
-            width: 38rem;
+            width: 35rem;
             height: 50rem;
         }
 
         .contact{
             margin-top: 5rem;
         }
-}
 
+        .contact h2{
+            font-size: 65px;
+        }
+}
