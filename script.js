@@ -17,18 +17,6 @@ var typed = new Typed(".typewriter-text",
 let currentProjectIndex = 0;
 const projects = [
     { 
-        image: '3.png', 
-        title: 'Petal Palette',
-        description: 'Petal Palette is a vibrant flower shop website designed to showcase elegant floral arrangements. The structured layout and beautiful imagery provide an immersive, enjoyable browsing experience. Users can easily explore various flower categories, making shopping simple and delightful.', 
-        link: 'https://deepiga-v.github.io/Petal-Palette/' 
-    },
-    { 
-        image: '4.png', 
-        title: 'Café Aura',
-        description: 'Café Aura is a coffee shop website with a warm, inviting design that reflects the cozy atmosphere of the cafe. Its clean layout and smooth navigation make exploring the menu and cafe details simple and engaging. Thoughtfully crafted visuals to the ambiance, enhancing the overall browsing experience.', 
-        link: 'https://deepiga-v.github.io/Cafe-Aura/#home' 
-    },
-    { 
         image: '1.png', 
         title: 'Washie',
         description: 'Washie is a user-friendly laundry service app created to simplify laundry management. Through research-driven design, it features a clean, intuitive layout that meets user needs. Consistent visuals and smooth navigation make Washie an efficient, hassle-free solution for laundry services.', 
@@ -39,6 +27,18 @@ const projects = [
         title: 'Crave Cart',
         description: 'Crave Cart is a food ordering app designed for a seamless and enjoyable ordering. Through user-focused design, it features an intuitive interface that makes selecting items easy. A consistent visual style and clear navigation create an efficient, hassle-free way for users to satisfy their cravings with just a few taps.', 
         link: 'project-link-4' 
+    },
+    { 
+        image: '3.png', 
+        title: 'Petal Palette',
+        description: 'Petal Palette is a vibrant flower shop website designed to showcase elegant floral arrangements. The structured layout and beautiful imagery provide an immersive, enjoyable browsing experience. Users can easily explore various flower categories, making shopping simple and delightful.', 
+        link: 'https://deepiga-v.github.io/Petal-Palette/' 
+    },
+    { 
+        image: '4.png', 
+        title: 'Café Aura',
+        description: 'Café Aura is a coffee shop website with a warm, inviting design that reflects the cozy atmosphere of the cafe. Its clean layout and smooth navigation make exploring the menu and cafe details simple and engaging. Thoughtfully crafted visuals to the ambiance, enhancing the overall browsing experience.', 
+        link: 'https://deepiga-v.github.io/Cafe-Aura/#home' 
     }
 ];
 
