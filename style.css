@@ -432,6 +432,10 @@ section{
         height: 250px;
         margin-top: 20px;
     }
+
+    .skills-section h2{
+        font-size: 59px;
+    }
 }
 
 /* 2x2 Matrix for Skill Boxes on Larger Screens */
@@ -935,7 +939,7 @@ footer .social a:hover {
             margin-bottom: -30rem;
         }
         .about-content h2{
-            font-size: 65px;
+            font-size: 59px;
             margin-bottom: 3rem;
 
         }
@@ -959,6 +963,9 @@ footer .social a:hover {
             border: 25px solid #191970;
             margin-left: 13rem;
         }
+        .timeline-section h2{
+            font-size: 59px;
+        }
         .timeline-items::before{
             left: 7px;
         }
@@ -981,8 +988,12 @@ footer .social a:hover {
         }    
         
         .project-box{
-            width: 35rem;
+            width: 32rem;
             height: 50rem;
+        }
+
+        .projects-section h2{
+            font-size: 59px;
         }
 
         .contact{
@@ -990,6 +1001,7 @@ footer .social a:hover {
         }
 
         .contact h2{
-            font-size: 65px;
+            font-size: 59px;
         }
 }
+
