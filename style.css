@@ -109,7 +109,7 @@ section{
     place-items: center;
     border-radius: 25%;
     border: 20px solid #191970;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .home-img img{
@@ -825,9 +825,11 @@ footer .social a:hover {
         font-size: 20px;
     }
     .name {
+        text-align: center;
         font-size: 28px;
     }
     .designation {
+        text-align: center;
         font-size: 15px;
     }
 }
@@ -873,8 +875,8 @@ footer .social a:hover {
             width: 30%;
             padding: 1rem 1rem;
             background: white;
-            border-left: 2px solid #191970;
-            border-bottom: 2px solid #191970;
+            border-left: 3px solid #191970;
+            border-bottom: 3px solid #191970;
             border-bottom-left-radius: 2rem;
             display: none;
         }
@@ -893,14 +895,15 @@ footer .social a:hover {
         }
         .home{
             flex-direction: column-reverse;
-            margin: 5rem 10rem;
-            margin-left: 1rem;
+            margin: 2rem 7rem;
+            margin-left: -3rem;
+            margin-bottom: 10rem;
         }
 
         .home-circle{
             width: 55vw;
             height: 55vw;
-            top: 5rem;
+            top: -10rem;
             left: 10rem;
         }
 
@@ -909,8 +912,16 @@ footer .social a:hover {
             border: none;
             border-radius: 50%;
         }
+        .home-content h1{
+            margin-left: -5rem;
+            font-size: 40px;
+        }
+        .home-content p{
+            margin: 1rem -5rem;
+        }
         .home-content h3{
             font-size: 2.3rem;
+            margin: 1rem -5rem;
         }
         .home-img img{
             width: 70vw;
@@ -919,6 +930,8 @@ footer .social a:hover {
         }
         .about{
             flex-direction: column-reverse;
+            margin-top: -40rem;
+            margin-bottom: -30rem;
         }
         .about-circle{
             height: 52vw;
@@ -930,21 +943,26 @@ footer .social a:hover {
         }
         .about-img{
             border: none;
+            align-content: center;
         }
         .about img{
             width: 70vw;
-            margin-top: 1rem;
+            margin-top: -5rem;
             border: none;
             margin-bottom: 3rem;
             border: 25px solid #191970;
+            margin-left: 13rem;
         }
-
         .timeline-items::before{
             left: 7px;
         }
 
         .timeline-item:nth-child(odd){
             padding-right: 0;
+        }
+
+        .timeline-content{
+            text-align: left;
         }
 
         .timeline-item:nth-child(odd),
@@ -954,6 +972,15 @@ footer .social a:hover {
 
         .timeline-dot{
             left: 0;
-        }        
+        }    
+        
+        .project-box{
+            width: 38rem;
+            height: 50rem;
+        }
+
+        .contact{
+            margin-top: 5rem;
+        }
 }
 
