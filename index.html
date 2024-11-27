@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deepiga | Portfolio</title>
-    <link rel="icon" href="DV website logo.png">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="DV website logo.png">
 </head>
 <body>
 
     <!--Navbar section starts-->
 
     <header class="header">
-        <a href="#home" class="logo">Deepiga <span> V</span></a>
+        <a class="logo">Deepiga <span> V</span></a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
@@ -50,7 +50,7 @@
         </div>
 
         <div class="home-img">
-            <img src="DV logo.png" alt="">
+            <img src="DV logo (2).png" alt="">
         </div>
     </section>
     
@@ -62,7 +62,7 @@
         <div class="about-circle"></div>
 
             <div class="about-img">
-                <img src="Pic.jpeg" alt="">
+                <img src="Pic1.jpeg" alt="">
             </div>
 
             <div class="about-content">
@@ -149,66 +149,91 @@
 </section>
 <!-- Skills section ends -->
 
-<!-- Projects section starts -->
 <section class="projects-section" id="projects">
     <h2 class="heading">Projects</h2>
-    <div class="project-box">
-        
-        <!-- Left Arrow -->
-        <div class="arrow left-arrow" onclick="prevProject()">&#10094;</div>
-        
-        <!-- Project Box Content -->
-        <div class="project-content">
+    
+    <!-- Left Side Projects -->
+    <div class="left-projects">
+        <h3 class="side-heading">UX/UI Projects</h3>
+        <div class="project-box">
+            <!-- Left Arrow -->
+            <div class="arrow left-arrow" onclick="prevLeftProject()">&#10094;</div>
             
-            <!-- Left Side (Image) -->
-            <div class="project-image-container">
-                <img src="path-to-project1-image" alt="Project Preview" class="project-image" id="projectImage">
+            <!-- Left Project Content -->
+            <div class="project-content">
+                <!-- Image -->
+                <div class="project-image-container">
+                    <img id="leftProjectImage" src="" alt="Left Project Preview" class="project-image">
+                </div>
+                
+                <!-- Description -->
+                <div class="project-info">
+                    <h3 id="leftProjectTitle" class="project-title"></h3>
+                    <p id="leftProjectDescription" class="project-description"></p>
+                    <a id="leftPreviewButton" href="#" target="_blank" class="preview-button">Preview</a>
+                </div>
             </div>
             
-            <!-- Right Side (Description and Button) -->
-            <div class="project-info">
-                <h3 class="project-title">Project Title</h3> <!-- New Title Heading -->
-                <p class="project-description">Short description of the project goes here.</p>
-                <a href="project-link" target="_blank" class="preview-button">Preview</a>
-            </div>
-
+            <!-- Right Arrow -->
+            <div class="arrow right-arrow" onclick="nextLeftProject()">&#10095;</div>
         </div>
         
-        <!-- Right Arrow -->
-        <div class="arrow right-arrow" onclick="nextProject()">&#10095;</div>
+        <!-- Dots for Left Projects -->
+        <div class="dots left-dots" id="leftDots"></div>
     </div>
 
-    <!-- Pagination Dots Below the Box -->
-    <div class="dots">
-        <span class="dot" onclick="currentProject(0)"></span>
-        <span class="dot" onclick="currentProject(1)"></span>
-        <span class="dot" onclick="currentProject(2)"></span>
-        <span class="dot" onclick="currentProject(3)"></span>
+    <!-- Right Side Projects -->
+    <div class="right-projects">
+        <h3 class="side-heading">Web Designing Projects</h3>
+        <div class="project-box">
+            <!-- Left Arrow -->
+            <div class="arrow left-arrow" onclick="prevRightProject()">&#10094;</div>
+            
+            <!-- Right Project Content -->
+            <div class="project-content">
+                <!-- Image -->
+                <div class="project-image-container">
+                    <img id="rightProjectImage" src="" alt="Right Project Preview" class="project-image">
+                </div>
+                
+                <!-- Description -->
+                <div class="project-info">
+                    <h3 id="rightProjectTitle" class="project-title"></h3>
+                    <p id="rightProjectDescription" class="project-description"></p>
+                    <a id="rightPreviewButton" href="#" target="_blank" class="preview-button">Preview</a>
+                </div>
+            </div>
+            
+            <!-- Right Arrow -->
+            <div class="arrow right-arrow" onclick="nextRightProject()">&#10095;</div>
+        </div>
+        
+        <!-- Dots for Right Projects -->
+        <div class="dots right-dots" id="rightDots"></div>
     </div>
 </section>
 <!-- Projects section ends -->
 
-<!-- Contact section starts -->
- <section class="contact" id="contact">
 
+<!-- Contact section starts -->
+<section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
 
-    <form action="#">
-
+    <form action="https://formspree.io/f/xjkvrzqd" method="POST" onsubmit="return validateForm()">
         <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="Email" placeholder="Email">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
         </div>
-
         <div class="input-box">
-            <input type="number" placeholder="Phone number">
+            <input type="number" name="phone" placeholder="Phone number" required>
         </div>
-
-        <textarea name=" " id="" cols="30" rows="7"
-        placeholder="Leave a Message..."></textarea>
+        <textarea name="message" cols="30" rows="7" placeholder="Leave a Message" required></textarea>
         <input type="submit" value="Send Message" class="btn">
     </form>
- </section>
+
+    <!-- Warning message -->
+    <p id="warning-message" style="color: red; display: none;">Please fill out all fields before submitting.</p>
+</section>
 <!-- Contact section ends -->
 
 <!-- Footer section starts -->
