@@ -1020,7 +1020,7 @@ footer .social a:hover {
         .skills-right .skills-image {
             height: 250px;
             width: 275px;
-            margin-top: 20px;
+            margin-top: -30px;
         }
         .skills-section h2{
             font-size: 59px;
