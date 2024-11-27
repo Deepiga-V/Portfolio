@@ -431,8 +431,8 @@ section{
     align-items: center;
     justify-content: center;
     position: relative;
-    max-width: 50rem;
-    max-height: 32rem;
+    width: 50rem;
+    height: 32rem;
     padding: 40px;
     border: 3px solid #0A7273;
     border-radius: 1rem;
@@ -972,6 +972,7 @@ footer .social a:hover {
         }    
         
         .project-box{
+            margin-top: 5rem;
             width: 32rem;
             height: 50rem;
         }
@@ -1018,10 +1019,14 @@ footer .social a:hover {
         }
         .skills-right .skills-image {
             height: 250px;
+            width: 275px;
             margin-top: 20px;
         }
         .skills-section h2{
             font-size: 59px;
+        }
+        .skills-left .skill-box{
+            margin-bottom: 25px;
         }
 }
 
@@ -1033,4 +1038,3 @@ footer .social a:hover {
         gap: 20px;
     }
 }
-
