@@ -337,7 +337,7 @@ section{
   /* Hover Effects for Skills Boxes */
   .skills-box:hover {
     transform: scale(1.03); /* Slight zoom effect on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Shadow effect on hover */
   }
   
   /* Box Titles */
@@ -429,7 +429,6 @@ section{
     background-color: #fff; /* Border background color */
     border: 3px solid #ddd; /* Border color and thickness */
     border-radius: 8px; /* Rounded corners for the border */
-    transition: transform 0.3s ease;
   }
   
   .project-item img {
@@ -439,8 +438,8 @@ section{
   }
   
   .project-item:hover {
-    transform: scale(1.03); /* Slight zoom effect on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Shadow effect on hover */
   }
   
   .project-info {
