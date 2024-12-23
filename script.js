@@ -1,11 +1,10 @@
 var typed = new Typed(".typewriter-text",
     {
         strings: [" ",
-            "Frontend Developer",
+            "UX/UI Designer",
 
-            "Web Designer",
-
-            "UX/UI Designer"
+            "Web Designer"
+                  
         ],
         typeSpeed: 100,
         backSpeed: 70,
