@@ -881,9 +881,9 @@ main {
 
         .navbar{
             position: absolute;
-            top: 0rem;
+            top: 7rem;
             right: -2rem;
-            width: 35%;
+            width: 30%;
             padding: 1rem 1rem;
             background: white;
             border-left: 3px solid #0A7273;
@@ -929,8 +929,8 @@ main {
 
     .home-box{
         height: 40vw;
-        width: 35vw;
-        margin-left: 8rem;
+        width: 65vw;
+        margin-left: -17rem;
         margin-top: 1rem;
     }
 
@@ -940,7 +940,7 @@ main {
     }
 
     .social-icons {
-        margin-left: 10rem;
+        margin-left: 15rem;
     }
 
     .social-icons a {
@@ -957,7 +957,7 @@ main {
     .about {
         padding: 1rem 10%;
         gap: 4rem;
-        margin-top: 30rem;
+        margin-top: 1rem;
     }
 
     .about-content h2{
@@ -972,9 +972,9 @@ main {
 
     .about-box{
         height: 40vw;
-        width: 35vw;
-        margin-right: 1rem;
-        margin-top: -116rem;
+        width: 65vw;
+        margin-left: 2rem;
+        margin-top: 1rem;
     }
 
     .minimum-box{
@@ -987,7 +987,7 @@ main {
     }
 
     .skills-section{
-        margin-top: -60rem;
+        margin-top: 1rem;
         padding: 1rem 1%;
     }
 
