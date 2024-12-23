@@ -909,7 +909,7 @@ main {
     .home {
         padding: 1rem 1%;
         gap: 2rem;
-        margin-top: 1.5rem;
+        margin-top: -3rem;
     }
 
     .home-content h1 {
@@ -987,7 +987,7 @@ main {
     }
 
     .skills-section{
-        margin-top: -20rem;
+        margin-top: -70rem;
         padding: 1rem 1%;
     }
 
@@ -1020,7 +1020,7 @@ main {
     }
 
     footer {
-        height: 30rem;
+        height: 45rem;
         width: 103%;
         padding: 2% 0%;
         margin-bottom: 0%;
