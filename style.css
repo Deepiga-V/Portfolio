@@ -909,7 +909,7 @@ main {
     .home {
         padding: 1rem 1%;
         gap: 2rem;
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
 
     .home-content h1 {
@@ -974,7 +974,7 @@ main {
         height: 40vw;
         width: 65vw;
         margin-left: 2rem;
-        margin-top: 1rem;
+        margin-top: -20rem;
     }
 
     .minimum-box{
@@ -987,7 +987,7 @@ main {
     }
 
     .skills-section{
-        margin-top: 1rem;
+        margin-top: -5rem;
         padding: 1rem 1%;
     }
 
