@@ -4,8 +4,6 @@ var typed = new Typed(".typewriter-text",
 
             "UX/UI Designer",
 
-            "Web Designer"
-
         ],
         typeSpeed: 100,
         backSpeed: 70,
@@ -64,26 +62,27 @@ window.onscroll = () => {
     { name: 'Prototyping', percentage: 95 },
     { name: 'Design System', percentage: 85 }
   ];
-  
+
   const tools = [
     { name: 'Figma', percentage: 90 },
     { name: 'Illustrator', percentage: 85 },
     { name: 'Photoshop', percentage: 85 },
     { name: 'Canva', percentage: 95 }
   ];
-  
+
   const technicals = [
     { name: 'HTML', percentage: 80 },
     { name: 'CSS', percentage: 80 },
     { name: 'JavaScript', percentage: 30 }
   ];
-  
+
   function renderSkills(containerId, skills) {
     const container = document.getElementById(containerId);
+    container.innerHTML = ''; // Clear previous skills for repeated animation
     skills.forEach((skill, index) => {
       const skillDiv = document.createElement('div');
       skillDiv.className = 'skill-item';
-  
+
       skillDiv.innerHTML = `
         <div class="label">
           <span>${skill.name}</span>
@@ -93,14 +92,47 @@ window.onscroll = () => {
           <div class="bar" style="transition-delay: ${index * 100}ms"></div>
         </div>
       `;
-  
+
       container.appendChild(skillDiv);
     });
   }
-  
+
   renderSkills('methods', methods);
   renderSkills('tools', tools);
   renderSkills('technicals', technicals);
+
+  // Re-animate skill bars every time the skill section comes into view
+  const skillSection = document.querySelector('.skills-section'); // Change selector as needed
+
+  if (skillSection) {
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Re-render skills to reset animation
+          renderSkills('methods', methods);
+          renderSkills('tools', tools);
+          renderSkills('technicals', technicals);
+
+          // Animate bars
+          document.querySelectorAll('.skill-item .bar').forEach((bar, idx) => {
+            const percentage = parseInt(
+              bar.parentElement.previousElementSibling.querySelector('span:last-child').textContent
+            );
+            setTimeout(() => {
+              bar.style.width = `${percentage}%`;
+            }, idx * 100);
+          });
+        } else {
+          // Reset bars when out of view
+          document.querySelectorAll('.skill-item .bar').forEach(bar => {
+            bar.style.width = '0';
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+
+    skillObserver.observe(skillSection);
+  }
   
   function handleIntersection(entries, observer) {
     entries.forEach(entry => {
