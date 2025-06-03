@@ -58,21 +58,21 @@ window.onscroll = () => {
 
   const methods = [
     { name: 'User Research', percentage: 75 },
-    { name: 'Wireframing', percentage: 90 },
-    { name: 'Prototyping', percentage: 95 },
-    { name: 'Design System', percentage: 85 }
+    { name: 'Wireframing', percentage: 80 },
+    { name: 'Prototyping', percentage: 85 },
+    { name: 'Design System', percentage: 80 }
   ];
 
   const tools = [
     { name: 'Figma', percentage: 90 },
-    { name: 'Illustrator', percentage: 85 },
-    { name: 'Photoshop', percentage: 85 },
-    { name: 'Canva', percentage: 95 }
+    { name: 'Illustrator', percentage: 50 },
+    { name: 'Photoshop', percentage: 50 },
+    { name: 'Canva', percentage: 90 }
   ];
 
   const technicals = [
     { name: 'HTML', percentage: 80 },
-    { name: 'CSS', percentage: 80 },
+    { name: 'CSS', percentage: 75 },
     { name: 'JavaScript', percentage: 30 }
   ];
 
