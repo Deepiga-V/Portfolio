@@ -867,14 +867,13 @@ main {
         padding: 10rem 5% 4rem 5%;
         text-align: center;
     }
-    .home-box {
-        width: 50vw;
-        height: 50vw;
+     .minim-box {
+        width: 45vw;
+        height: 45vw;
         margin: 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        order: 1;
     }
     .home-content {
         width: 100%;
@@ -885,13 +884,13 @@ main {
         order: 2;
     }
     .home-content h1 {
-        font-size: 3.2rem;
+        font-size: 3rem;
         margin-left: 0;
         text-align: center;
         width: 100%;
     }
     .home-content h3 {
-        font-size: 2rem;
+        font-size: 4rem;
         text-align: center;
         width: 100%;
     }
@@ -914,6 +913,7 @@ main {
         margin: 1rem 1rem 1rem 0;
     }
     .about {
+        display: flex;
         flex-direction: column;
         gap: 3rem;
         padding: 6rem 5% 4rem 5%;
@@ -921,17 +921,22 @@ main {
         align-items: center;
         justify-content: center;
         text-align: center;
+        min-height: 100vh;
+        box-sizing: border-box;
     }
     .about-content {
         width: 100%;
+        max-width: 500px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         text-align: center;
         order: 2;
+        margin: 0 auto;
     }
     .about-content h2 {
-        font-size: 4rem;
+        font-size: 5rem;
         text-align: center;
         width: 100%;
     }
@@ -962,7 +967,7 @@ main {
         margin-top: 0;
     }
     .skills-header h2 {
-        font-size: 4rem;
+        font-size: 5rem;
     }
     .skills-grid {
         grid-template-columns: 1fr;
@@ -981,7 +986,7 @@ main {
         align-items: center;
     }
     .projects-section h2 {
-        font-size: 4rem;
+        font-size: 5rem;
         text-align: center;
         width: 100%;
     }
@@ -1008,7 +1013,7 @@ main {
         width: 100%;
     }
     .filter-btn {
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding: 10px 16px;
         text-align: center;
     }
@@ -1202,8 +1207,7 @@ main {
         justify-content: center;
         text-align: center;
         display: flex;
-        width: 100vw;
-        margin: 0 auto;
+        margin: 0 auto;      
     }
     .about-content {
         width: 100%;
