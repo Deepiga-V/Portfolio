@@ -2,7 +2,7 @@ var typed = new Typed(".typewriter-text",
     {
         strings: [" ",
 
-            "UX/UI Designer",
+            "UI/UX Designer",
 
         ],
         typeSpeed: 100,
@@ -33,7 +33,6 @@ window.onscroll = () => {
         }
     })
 }
-
 
   const filterButtons = document.querySelectorAll('.filter-btn');
   const projects = document.querySelectorAll('.project-item');
