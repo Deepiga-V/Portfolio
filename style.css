@@ -11,6 +11,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 html{
     font-size: 62%;
     overflow-x: hidden;
@@ -427,7 +429,7 @@ section{
   
   .project-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Two projects per row */
+    grid-template-columns: repeat(3, 1fr); /* Three projects per row */
     gap: 35px; /* Spacing between items */
     margin-top: 5rem;
     margin-left: 3rem;
@@ -480,7 +482,7 @@ section{
   
   .filter-btn {
     padding: 15px 25px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     background-color: #363e49;
     color: #fff;
     border: none;
