@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepiga | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="DV website logo.png">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+
+<!--Navbar section starts--> 
+
+<header class="header" data-aos="fade-down">
+  <a class="logo">
+      <img src="DV website logo 1.png" alt="Logo" class="logo-image">
+  </a>
+
+  <i class='bx bx-menu' id="menu-icon"></i>
+  <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#works">Works</a>
+      <a href="https://drive.google.com/file/d/1e7YIXap90GgRT8_vCtynt4evxyEp-grX/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+  </nav>       
+</header>
+
+<!--Navbar section ends-->
+
+<!--Home section starts-->
+
+<section class="home" id="home">
+  <div class="home-content" data-aos="fade-right">
+      <h3>Hello !</h3>
+      <h1>I'm <span>Deepiga</span></h1>
+      <h3 class="text-animaton">I'm a <span class="typewriter-text"></span></h3>
+      <p>Shaping my portfolio to tell the story of my growth, innovation, and design mindset. Every projects is a step forward—reflecting my commitment to creating meaningful and impactful experiences.</p>
+
+      <div class="social-icons">
+          <a href="https://www.linkedin.com/in/deepiga-v-05a25524b" target="_blank" rel="noopener"><i class='bx bxl-linkedin-square'></i></a>
+          <a href="https://github.com/Deepiga-V" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
+          <a href="https://www.behance.net/deepiga" target="_blank" rel="noopener"><i class='bx bxl-behance'></i></a>
+          <a href="https://dribbble.com/Deepiga" target="_blank" rel="noopener"><i class='bx bxl-dribbble'></i></a>
+          <a href="https://www.fiverr.com/deepiga_v" target="_blank" rel="noopener" aria-label="Fiverr" class="fiverr-icon-link">
+              <svg width="18" height="18" viewBox="3 0 19 19" fill="none" style="vertical-align:middle;" class="fiverr-svg">
+              <text x="6.5" y="17" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="20" fill="#0A7273">fi</text>
+              </svg>
+          </a>
+          <a href="mailto:email@deepigavelmurugan.com" rel="noopener"><i class='bx bxs-envelope'></i></a>
+          <style>
+            .fiverr-icon-link .fiverr-svg text {
+            transition: fill 0.2s;
+            }
+            .fiverr-icon-link:hover .fiverr-svg text {
+            fill: #fff;
+            }
+          </style>
+      </div>
+
+  </div>
+
+  <div class="home-box">
+      <div class="minim-box">
+          <img src="Pic1.jpeg" alt="Profile Image">
+      </div>
+  </div>
+</section>
+
+<!--Home section ends-->
+
+<!--About section starts-->
+
+<section class="about" id="about">
+  <div class="about-box">
+      <div class="minimum-box">
+          <img src="DV logo 2.png" alt="About Image">
+      </div>
+  </div>
+
+  <div class="about-content" data-aos="fade-right">
+      <h2 class="heading">About</h2>
+
+      <h3 class="text-animaton">
+          A little bite more <span>about me : )</span>
+      </h3>
+
+      <p>Creative and detail-oriented designer with a computer science background, crafting intuitive and visually compelling digital experiences that blend function with elegance.</p>
+
+      <a href="https://drive.google.com/file/d/1e7YIXap90GgRT8_vCtynt4evxyEp-grX/view?usp=sharing" class="btn" target="_blank" rel="noopener">
+        <i class='bx bx-download' style="vertical-align:middle; margin-right:6px;"></i>Download Resume
+      </a>
+  </div>   
+</section>
+
+<!--About section ends-->
+    
+<!-- Skills section starts -->
+
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div id="title" class="skills-header hidden">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Methods -->
+        <div class="skill-card hidden">
+          <div class="skill-title">
+            <i class="bx bx-vector"></i> 
+            <h3>Methods</h3>
+          </div>
+          <div class="skills-list" id="methods"></div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card hidden">
+          <div class="skill-title">
+            <i class="bx bx-laptop"></i> 
+            <h3>Tools</h3>
+          </div>
+          <div class="skills-list" id="tools"></div>
+        </div>
+
+        <!-- Technicals -->
+        <div class="skill-card hidden">
+          <div class="skill-title">
+            <i class="bx bx-code-alt"></i> 
+            <h3>Technicals</h3>
+          </div>
+          <div class="skills-list" id="technicals"></div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+<!-- Skills section ends -->
+
+<!-- Works section starts -->
+
+<section class="projects-section" id="works" data-aos="fade-down">
+  <h2 class="heading">Works</h2>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="app">App Designs</button>
+    <button class="filter-btn" data-filter="web">Web Designs</button>
+    <button class="filter-btn" data-filter="frontend">Frontend Designs</button>
+  </div>
+
+  <div class="project-list">
+    <a href="https://www.behance.net/gallery/208991777/Washie-Laundry-Service-App" class="project-item" data-category="app" target="_blank" rel="noopener">
+      <img src="1.png" alt="Laundry Service App">
+      <div class="project-info">
+        <h3>Mobile Application</h3>
+        <p>Figma</p>
+      </div>
+    </a>
+
+    <a href="https://www.behance.net/gallery/214990791/Plantora-Plant-Shopping-App" class="project-item" data-category="app" target="_blank" rel="noopener">
+      <img src="2.png" alt="Plantora">
+      <div class="project-info">
+        <h3>Mobile Application</h3>
+        <p>Figma</p>
+      </div>
+    </a>
+
+    <a href="https://www.behance.net/gallery/227144121/Bus-Beacon-Bus-Tracking-App" class="project-item" data-category="app" target="_blank" rel="noopener">
+      <img src="3.png" alt="Bus Beacon">
+      <div class="project-info">
+        <h3>Mobile Application</h3>
+        <p>Figma</p>
+      </div>
+    </a>
+
+    <a href="https://www.behance.net/gallery/213455621/Soul-Music-Website" class="project-item" data-category="web" target="_blank" rel="noopener">
+      <img src="4.png" alt="Soul">
+      <div class="project-info">
+        <h3>Website Design</h3>
+        <p>Figma</p>
+      </div>
+    </a>
+
+    <a href="https://www.behance.net/gallery/214210633/Furnique-Furniture-Website" class="project-item" data-category="web" target="_blank" rel="noopener">
+      <img src="5.png" alt="Furnique">
+      <div class="project-info">
+        <h3>Website Design</h3>
+        <p>Figma</p>
+      </div>
+    </a>
+
+    <a href="https://www.behance.net/gallery/227144787/Heavenly-Real-Estate-Website" class="project-item" data-category="web" target="_blank" rel="noopener">
+      <img src="6.png" alt="Heavenly">
+      <div class="project-info">
+        <h3>Website Design</h3>
+        <p>Figma</p>
+      </div>
+    </a>
+
+    <a href="https://deepiga-v.github.io/Petal-Palette/" class="project-item" data-category="frontend" target="_blank" rel="noopener">
+      <img src="7.png" alt="Petal Palette">
+      <div class="project-info">
+        <h3>Website Design</h3>
+        <p>HTML, CSS</p>
+      </div>
+    </a>
+
+    <a href="https://deepiga-v.github.io/Cafe-Aura/" class="project-item" data-category="frontend" target="_blank" rel="noopener">
+      <img src="8.png" alt="Cafe Aura">
+      <div class="project-info">
+        <h3>Website Design</h3>
+        <p>HTML, CSS, JavaScript</p>
+      </div>
+    </a>
+
+    <a href="https://deepiga-v.github.io/Petriot/" class="project-item" data-category="frontend" target="_blank" rel="noopener">
+      <img src="9.png" alt="Petriot">
+      <div class="project-info">
+        <h3>Website Design</h3>
+        <p>HTML, CSS, JavaScript</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- Works section ends -->
+
+<!-- Footer section starts -->
+
+<footer class="footer">
+  <div class="footer-left">
+      <p class="name">DEEPIGA V</p>
+      <p class="designation">UI/UX Designer</p>
+  </div>
+  
+  <div class="social-icons">
+          <a href="https://www.linkedin.com/in/deepiga-v-05a25524b" target="_blank" rel="noopener"><i class='bx bxl-linkedin-square'></i></a>
+          <a href="https://github.com/Deepiga-V" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
+          <a href="https://www.behance.net/deepiga" target="_blank" rel="noopener"><i class='bx bxl-behance'></i></a>
+          <a href="https://dribbble.com/Deepiga" target="_blank" rel="noopener"><i class='bx bxl-dribbble'></i></a>
+          <a href="https://www.fiverr.com/deepiga_v" target="_blank" rel="noopener" aria-label="Fiverr" class="fiverr-icon-link">
+              <svg width="18" height="18" viewBox="3 0 19 19" fill="none" style="vertical-align:middle;" class="fiverr-svg">
+              <text x="6.5" y="17" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="20" fill="#0A7273">fi</text>
+              </svg>
+          </a>
+          <a href="mailto:email@deepigavelmurugan.com" rel="noopener"><i class='bx bxs-envelope'></i></a>
+          <style>
+            .fiverr-icon-link .fiverr-svg text {
+            transition: fill 0.2s;
+            }
+            .fiverr-icon-link:hover .fiverr-svg text {
+            fill: #fff;
+            }
+          </style>
+      </div>
+</footer>
+
+<!-- Footer section ends -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+</body>
+</html>
